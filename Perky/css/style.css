@@ -1,0 +1,137 @@
+
+/*Definindo configurações gerais*/
+body{
+    background: #f0eaeb;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Definindo configurações da barra de navegação*/
+header{        
+    /*background-color: ;*/
+    width: 100%;    
+    background-image: linear-gradient(to right, #fc527f, #F7B4C6, white);    
+}
+
+#nav-principal a{
+    color:black;    
+    font-size: 1em;    
+}
+
+body.index #nav-principal a#home,
+body.sobre #nav-principal a#sobre,
+body.contato #nav-principal a#contato,
+body.servico #nav-principal a#servico{
+    background-color: #C48F9D;
+}
+
+
+#nav-principal a:hover{
+    color:white;    
+    background-color: #F7B4C6;
+}
+
+#nav-principal a:active{
+    color: #C48F9D;    
+}
+strong{    
+    font-weight: bold;
+    color: black;
+}
+
+#h1{
+    border-bottom: 1px double;
+}
+/*
+-----Mexendo nos conteudos
+*/
+#topo{
+    background-image: linear-gradient(to right, #fc527f, #F7B4C6, white);    
+    font-family:'Times New Roman', Times, serif ;    
+    font-weight: bold; 
+    color:white;    
+}
+
+#topo-2{
+    font-size: 25px;
+}
+
+#geral{
+    background: #f1d0d9;
+}
+#titulo{
+    font-size:2em;
+    background: #F7B4C6;    
+    padding-left: 5%   
+}
+
+#img-post, #slider img{
+    border-radius: 25%;
+    width : 250px;
+    height: 250px;
+    margin-bottom: 15%;
+}
+strong{
+    color: pink;
+}
+
+#subtitulo{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color:#fc527f;
+    padding: 0px;
+}
+
+/*Animação*/
+[data-anime]{
+    opacity: 5%;
+    transition: 1s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="right"]{
+    transform: translate3d(100px, 0, 0);
+}
+
+[data-anime="top"]{
+    transform: translate3d(0, -100px, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+/*
+-----Mexendo no footer
+*/
+
+footer{
+    background-color: #C48F9D;    
+}
+
+footer a{
+    color: white;    
+}
+
+/*Animação instagram*/
+
+#slider{
+    border-radius: 25%;
+    width : 250px;
+    height: 250px;        
+}
+
+#slider img{
+    opacity: 0;
+    position: absolute;
+
+    object-fit: cover;
+    transition: opacity 800ms;
+}
+
+#slider img.selected{
+    opacity: 1;
+}
